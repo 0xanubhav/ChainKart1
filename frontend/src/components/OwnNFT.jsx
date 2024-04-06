@@ -5,16 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import image_ from "../assets/3.jpeg";
 /// same collection address for all the NFTs created by the artists
-import {
-  NFT_Contract_adddress,
-  NFT_Contract_abi,
-  NFT_Fraction_Address,
-  NFT_Fraction_abi,
-  Token_abi,
-} from "../constants";
-import { isAddress } from "ethers/lib/utils";
-import { useProvider, useSigner, useContract, useAccount } from "wagmi";
-import { Contract } from "ethers";
+// import {
+//   NFT_Contract_adddress,
+//   NFT_Contract_abi,
+//   NFT_Fraction_Address,
+//   NFT_Fraction_abi,
+//   Token_abi,
+// } from "../constants";
+// import { isAddress } from "ethers/lib/utils";
+// import { useProvider, useSigner, useContract, useAccount } from "wagmi";
+// import { Contract } from "ethers";
 
 export default function OwnNFT(props) {
   const [tokenId, settokenId] = useState(0);
@@ -252,7 +252,7 @@ export default function OwnNFT(props) {
         </div>
         <div className={styles.card_content}>
           <h3>
-            <u>{nft.title}</u>
+            <u>BMW</u>
           </h3>
           <button
             onClick={() => {

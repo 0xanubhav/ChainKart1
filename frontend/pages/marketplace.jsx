@@ -7,12 +7,14 @@ import gold from "../src/assets/gold.jpg";
 import nike from "../src/assets/nike.jpg";
 import art from "../src/assets/art.jpg";
 import property from "../src/assets/property.jpg";
+import watch from "../src/assets/watch.jpg";
+import propy from "../src/assets/prop.jpg";
 // import { useContract } from "@thirdweb-dev/react";
-import { NFT_Contract_adddress, Token_abi } from "../src/constants";
-import { isAddress } from "ethers/lib/utils";
+// import { NFT_Contract_adddress, Token_abi } from "../src/constants";
+// import { isAddress } from "ethers/lib/utils";
 // import { useProvider, useSigner, useContract, useAccount } from "wagmi";
-import { ethers } from "ethers";
-import { useContract, useContractRead } from "@thirdweb-dev/react";
+// import { ethers } from "ethers";
+// import { useContract, useContractRead } from "@thirdweb-dev/react";
 
 // import { useContract } from "@thirdweb-dev/react";
 // import React, { useState, useEffect } from "react";
@@ -32,17 +34,17 @@ export default function Marketplace() {
 
   // fetch Tokens
 
-  const [tokens, setTokens] = useState([]);
+  // const [tokens, setTokens] = useState([]);
   const data = [
     {
-      price: "1875000",
+      price: "1,875,000",
       imageUrl: bmw,
       name: "BMW i7",
     },
     {
-      price: "200000",
+      price: "200,000",
       imageUrl: property,
-      name: "Real State Property",
+      name: "Dubai based property",
     },
     {
       price: "800",
@@ -58,6 +60,14 @@ export default function Marketplace() {
       price: "5",
       imageUrl: art,
       name: "Art Work",
+    },{
+      price: "13,000",
+      imageUrl: watch,
+      name: "Rolex Watch",
+    },{
+      price: "1,254,442",
+      imageUrl: propy,
+      name: "Hong Kong based Property",
     },
   ];
 

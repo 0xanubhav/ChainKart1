@@ -28,7 +28,6 @@ export default function Layout({ children }) {
               : styles.navmenu + " " + styles.active
           }
         >
-          {/* <li className={styles.navLink}>Home</li> */}
           <li className={styles.navLink}>
             <Link href={"/create"}>Create</Link>
           </li>

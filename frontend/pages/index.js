@@ -1,9 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import img2 from "../src/assets/nft1.webp";
-import img1 from "../src/assets/nft2.webp";
-import img3 from "../src/assets/nft3.webp";
 import image from "../src/assets/collage2.png";
 import Link from "next/link";
 

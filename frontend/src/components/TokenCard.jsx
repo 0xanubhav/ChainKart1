@@ -11,7 +11,6 @@ export default function TokenCard(props) {
       <div className={styles.image}>
         <Image
           className={styles.image}
-          //  src={ coverPhoto ? coverPhoto.url : image}
           src={image}
           alt="Property image"
           width={"300px"}

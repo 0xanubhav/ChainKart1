@@ -11,7 +11,6 @@ export default function Card(props) {
       <div className={styles.image}>
         <Image
           className={styles.image}
-          //  src={ coverPhoto ? coverPhoto.url : image}
           src={props.data.imageUrl}
           alt="Property image"
           width={"300px"}

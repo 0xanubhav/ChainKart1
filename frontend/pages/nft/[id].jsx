@@ -1,5 +1,5 @@
 import styles from "../../styles/Home.module.css";
-import image from "../../src/assets/3.png";
+import image from "../../src/assets/gold.jpg";
 import Image from "next/image";
 
 // import { useContract } from "@thirdweb-dev/react";
@@ -89,26 +89,35 @@ export default function NFT(props) {
 
   return (
     <div className={styles.nft_page}>
-      <h1 className={styles.heading}>NFT title here</h1>
+      <h1 className={styles.heading}>Dubai Gold</h1>
       <div className={styles.nft_section}>
         <div className={styles.img}>
           <Image className={styles.img} src={image} />
         </div>
         <div className={styles.right}>
-          <h2>NFT Description</h2>
+          <h2>RWA Description</h2>
           <h4 className={styles.nft_desc}>
-            {props.desc}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-            nobis, tempora deleniti itaque provident, corrupti explicabo veniam
+           Crafted with precision and certified for its purity, this gleaming treasure promises enduring value in uncertain times. Whether you're a seasoned investor or a connoisseur of fine assets, this gold bar presents an unparalleled opportunity to fortify your portfolio with a tangible asset renowned for its enduring worth.
           </h4>
+          <h4>
+          Specifications:
+          </h4>
+          <ul>
+          <li>Purity: 99.99%</li>
+          <li>Weight: 500g</li>
+          <li>Dimensions: 80mm x 40mm x 10mm</li> 
+          <li>Certification: MMTC-Pamp</li>
+          </ul>
+          
 
           <div className={styles.buy}>
             <h3>Purchase NFT</h3>
-            <label htmlFor="">You Pay</label>
-            <input type="number" />
-            <label htmlFor="">You Recieve</label>
-            <input type="number" />
-            <h4 htmlFor="">Estimated Gas + Fees = $ 0.235 {props.gasfee}</h4>
+            <label htmlFor="">You Recieve : 1 Gold RWA</label>
+            <label htmlFor="">RWA Price : $800</label>
+            <label htmlFor="">Platform fees + Convenience fees = 3% </label>
+            
+            <label htmlFor="">Final Price : $824</label>
+           
             <hr className={styles.hr} />
             <button className={`${styles.btn} ${styles.center}`}>
               Purchase
